@@ -27,15 +27,17 @@ This project addresses these challenges by using **vision-based biometric identi
 
 ## 3. System Architecture
 
-Cattle Face Image 1 Cattle Face Image 2
-↓ ↓
-Face Feature Extraction (ViT + MagFace)
-↓
-Embedding Normalization
-↓
-Cosine Similarity Computation
-↓
-Identity Match / No-Match Decision
+Cattle Face Image 1        Cattle Face Image 2  
+        ↓                          ↓  
+Face Feature Extraction (ViT + MagFace)  
+        ↓  
+Embedding Normalization  
+        ↓  
+Cosine Similarity Computation  
+        ↓  
+Identity Match / No-Match Decision  
+
+Then type this manually:
 
 ---
 
