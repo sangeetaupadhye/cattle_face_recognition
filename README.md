@@ -1,4 +1,4 @@
-# 🐄 Cattle Face Recognition System
+#  Cattle Face Recognition System
 
 An applied deep learning system for **cattle identity verification** using **computer vision–based face recognition**, designed to operate under **real-world farm and production constraints**.
 
