@@ -110,6 +110,7 @@ Switching to **metric learning** significantly improved generalization, robustne
 
 ## 11. Repository Scope
 
-This repository contains a **production-ready inference and API implementation** of the cattle face recognition system.
+This repository contains a **production-ready inference implementation** of the cattle face recognition system.
 
 Training pipelines, sensitive data, and trained model weights are excluded.
+
