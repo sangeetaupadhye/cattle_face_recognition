@@ -1,18 +1,20 @@
-1. PyTorch Model
-Vision Transformer (ViT) with MagFace
+# Model Overview
 
-Used for cattle face feature extraction and cattle identity embedding
+# PyTorch Model: Vision Transformer (ViT) with MagFace
 
-Chosen for strong global feature learning, robustness to pose and illumination variations, and discriminative face verification using magnitude-aware embeddings
+- Used for **cattle face feature extraction** and **cattle identity embedding**
+- Chosen for **strong global feature learning**, robustness to **pose and illumination variations**, and **discriminative face verification** using **magnitude-aware embeddings**
 
-Cosine Similarity
+---
 
-Used for identity matching
+# Similarity Matching: Cosine Similarity
 
-Chosen for fast and lightweight comparison between normalized embeddings
+- Used for **identity matching**
+- Chosen for **fast and lightweight comparison** between normalized embeddings
 
-Inference Details
+---
 
-Single unified model pipeline
+# Inference Details
 
-Supports CPU and GPU inference
+- Single unified model pipeline  
+- Supports **CPU and GPU inference**
