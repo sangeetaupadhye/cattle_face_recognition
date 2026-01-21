@@ -37,8 +37,6 @@ Cosine Similarity Computation
         ↓  
 Identity Match / No-Match Decision  
 
-Then type this manually:
-
 ---
 
 ## 4. ML & Inference Pipeline
