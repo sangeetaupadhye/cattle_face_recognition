@@ -79,19 +79,36 @@ Identity Match / No-Match Decision
 
 ---
 
-## 8. Learnings & Future Improvements
+## 8. Code Walkthrough: Face Verification Pipeline
 
-- Metric learning significantly improves cattle identity separation  
-- Threshold tuning is critical for reliable verification  
+The core function `process_face_verification` handles a single verification request end to end.  
+It validates inputs, preprocesses images, extracts embeddings using the **Vision Transformer with MagFace** model, and computes **cosine similarity** to determine identity match using a fixed threshold.
 
-**Future scope includes:**
-- Automatic face detection and alignment  
-- Larger-scale dataset training  
-- Video-based cattle face recognition  
+This separation allows the same logic to be reused across **API**, **batch**, or **offline** workflows without modification.
 
 ---
 
-## 9. Repository Scope
+## 9. Key Technical Decisions
+
+**Vision Transformer with MagFace**
+
+Vision Transformer with MagFace was chosen over CNN-based classifiers to enable **metric-learning–based verification**, which generalizes better to **unseen cattle identities** and avoids retraining when new animals are introduced.
+
+**Cosine Similarity for Verification**
+
+Cosine similarity was selected instead of learned classifiers to keep inference **lightweight**, **interpretable**, and efficient, especially under **CPU-only deployment constraints**.
+
+---
+
+## 10. One Learning
+
+Initially, treating the problem as a **classification task** performed poorly when new cattle identities were introduced.
+
+Switching to **metric learning** significantly improved generalization, robustness, and long-term scalability of the system.
+
+---
+
+## 11. Repository Scope
 
 This repository contains a **production-ready inference and API implementation** of the cattle face recognition system.
 
